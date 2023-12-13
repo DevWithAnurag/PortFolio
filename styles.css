@@ -20,8 +20,37 @@ body {
 }
 .floatingEmail{
     position: absolute;
+    z-index: 99;
     left: 5%;
+    
 }
+.floatingEmail>img{
+    transition: all 0.3s;
+}
+.floatingEmail>img:hover{
+scale: 1.3;
+cursor: pointer;
+}
+
+.afterHoverBox{
+  position: absolute;
+  overflow: hidden;
+  z-index: -1;
+  top: 125px;
+  left: 28px;
+  width: 115px;
+  opacity: 0;
+  scale: 0;
+  height: 37px;
+  border-radius:30px;
+  background-color: rgb(255, 255, 255);
+  display: grid;
+  place-items:center;
+  font-family: 'Trocchi', serif;
+  transition: all 0.2s;
+}
+
+
 .line{
     width: 6px;
 height: 120px;
@@ -142,6 +171,9 @@ background: #1068CF;
     font-family: 'Varela', sans-serif;
 }
 
+#greeting{
+  font-size: 20px;
+}
 .highlight{
     color: #087aff;
     font-weight: 800;
