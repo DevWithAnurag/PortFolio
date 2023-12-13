@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
     <title>Anurag's PortFolio</title>
 </head>
 
@@ -15,7 +15,7 @@
         <div class="floatingEmail">
             <div class="line">
             </div>
-            <img src="email.png" alt="email us" style="width: 47px; position:absolute; left: -346%; filter: invert(1);">
+            <img src="email.png" alt="email us" style="width: 47px; position:absolute; left: -346%; filter: invert(1);" title="Email US">
         </div>
 
         <div class="top">
@@ -63,7 +63,7 @@
             <div class="aboutMe">
 
                 <div class="greetingContainer">
-                    <h1>Anurag is a <span class="highlight">Web developer</span></h1>
+                    <h1>Anurag is a <span class="highlight" id="element">Web developer</span></h1>
                     <p>Greetings! I'm Anurag Tiwari, a web developer with a passion for crafting exceptional digital
                         experiences. Excited to connect and collaborate on creative projects. Let's embark on this
                         journey together!</p>
@@ -100,7 +100,7 @@
                 
                 <div class="box">
                     <div class="boxTop">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="38" height="11" viewBox="0 0 38 11" fill="none">
+                        <svg  xmlns="http://www.w3.org/2000/svg" width="38" height="11" viewBox="0 0 38 11" fill="none">
                             <ellipse cx="5.36673" cy="5.25517" rx="4.95828" ry="5.05106" fill="#FF0000" />
                             <ellipse cx="19.097" cy="5.25517" rx="4.95828" ry="5.05106" fill="#FAFF00" />
                             <ellipse cx="32.8282" cy="5.25517" rx="4.95828" ry="5.05106" fill="#00FF38" />
@@ -222,7 +222,15 @@
         </div>
 
     </div>
-
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['Web Developer', 'Web Designer'],
+          typeSpeed: 50,
+          loop: true,
+          loopCount: Infinity,
+        });
+      </script>
     <script src="script.js"></script>
 </body>
 
