@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Trocchi&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Varela&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #1F1F1F;
+}
+
+.page1 {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.floatingEmail{
+    position: absolute;
+    left: 5%;
+}
+.line{
+    width: 6px;
+height: 120px;
+background: #1068CF;
+}
+.top {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    margin: auto;
+    height: 90px;
+    background: url('Ellipse 4.png') no-repeat;
+    background-position: center;
+    background-size: 780px;
+}
+
+.circle {
+    border-radius: 0 0 150px 150px;
+    background: #1068CF;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 9px 34px 15px 38px;
+
+}
+
+.heading>h1 {
+    color: #FFF;
+    font-weight: 400;
+    font-family: 'Trocchi', serif;
+    padding-top: 10px;
+}
+
+.navBar {
+    width: 62px;
+    height: 454px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: #4D5155;
+    backdrop-filter: blur(21px);
+    position: absolute;
+    right: 0.5%;
+    top: 12%;
+    padding: 20px 0px 20px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.navBarContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    transition: all 0.2s;
+}
+
+.image:hover {
+    scale: 1.9;
+}
+
+.image>img {
+    width: 28px;
+    /* filter: invert(1); */
+    filter: sepia(100%);
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.ProFileImageAndGreetingcontainer {
+    margin: 0px 100px 0px;
+    display: flex;
+}
+
+.profileImage {
+  display: grid;
+  place-items: center;
+    width: 40%;
+
+}
+
+.aboutMe {
+    padding: 50px;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    color: white;
+}
+
+.greetingContainer{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 17px;
+}
+.greetingContainer>h1{
+    font-family: 'Trocchi', serif;
+    font-size: 45px;
+    font-weight: 400;
+}
+.greetingContainer>h1::after {
+    content: '';
+    border: 3px solid #1068cf;
+    margin-left: 7px;
+}
+
+.greetingContainer>p{
+    text-align: center ;
+    color: white;
+    font-family: 'Varela', sans-serif;
+}
+
+.highlight{
+    color: #087aff;
+    font-weight: 800;
+    
+}
+
+.btnContainer{
+display: flex;
+gap: 70px;
+}
+
+
+.button {
+    font-family: 'Kanit', sans-serif;
+    min-width: 50px;
+    min-height: 30px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    font-weight: 700;
+    color: #ffffff;
+    background: rgb(34, 15, 15);
+    background: linear-gradient(90deg, rgb(17 103 204) 0%, rgb(17 103 204) 100%);
+    border: none;
+    border-radius: 7px;
+    box-shadow: rgb(17, 104, 204) 1px 1px 6px;
+    transition: all 0.3s ease-in-out 0s;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    padding: 10px;
+  }
+  
+  button::before {
+    content: '';
+    border-radius: 10px;
+    min-width: calc(25px + 76px);
+    min-height: calc(28px + 10px);
+    border: 3px solid rgb(16 104 207);
+    box-shadow: 0 0 20px rgb(17 103 204);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: all .3s ease-in-out 0s;
+  }
+
+  .hireMebtn::before{
+    min-width: calc(14px + 76px)
+  }
+
+  .button:hover,
+  .button:focus {
+    color: #000000;
+    transform: translateY(-6px);
+  }
+  
+  button:hover::before,
+  button:focus::before {
+    opacity: 1;
+  }
+  
+  button::after {
+    content: '';
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    border: 6px solid rgb(17 103 204);
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: ring 1.5s infinite;
+  }
+  
+  button:hover::after,
+  button:focus::after {
+    animation: none;
+    display: none;
+  }
+  
+  @keyframes ring {
+    0% {
+      width: 30px;
+      height: 30px;
+      opacity: 1;
+    }
+  
+    100% {
+      width: 127px;
+      height: 50px;
+      opacity: 0;
+    }
+  }
+
+
+  .SkillsContainer{
+    /* border: 2px solid red; */
+    width: 100%;
+    height: 400px;
+    margin: 20px;
+  }
+
+  .headingContainer{
+    position: absolute;
+    /* border:2px solid white; */
+    width: 220px;
+  }
+  .LineContainer{
+    /* margin-left: 10px;    */
+    margin-top: 25px;   
+  }
+
+.MySkills{
+    position: absolute;
+    left: 54px;
+    top: -1px;
+}
+
+.boxContainer{
+    padding-top: 70px;
+    padding-right: 50px;
+  display: flex;
+  justify-content: center;
+    width: 100%;
+    height: auto;
+    gap: 20px;
+}
+.box{
+    background: #2A2929;
+    border-radius: 30px;
+    width: 380px;
+    border: 1px solid #000;
+    height: 218.42px;
+    padding: 6px 0px 0px 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.boxTop{
+    height: 20px;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    gap: 50px;
+}
+.boxHeading>h3{
+    color: #FFF;
+    font-weight: 400;
+    font-family: 'Trocchi', serif;
+    font-size: 16px;
+}
+
+.BoxInnerContainer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    gap: 20px;
+}
+
+
+.left{
+    width: 100px;
+    display: flex;
+    flex-direction:column;
+    gap: 20px;
+}
+.left>h3{
+    color: #FFF;
+    font-weight: 400;
+    font-family: 'Trocchi', serif;
+    font-size: 16px;
+}
+.right{
+    display: flex;
+    flex-direction:column;
+    gap: 23px;
+    width: 300px;
+}
