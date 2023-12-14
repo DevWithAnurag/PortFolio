@@ -1,10 +1,31 @@
-@media only screen and (max-width: 1116px)
+@media only screen and (max-width: 1097px)
  {
 
     .ProFileImageAndGreetingcontainer {
         gap: 10px;
         justify-content: center;
         align-items: center;
-        /* border: 2px solid red; */
     }
+    .greetingContainer>h1{
+     font-size: 15px;   
+    }
+    .greetingContainer>p{
+     font-size: 10px;   
+     width: 210px;
+    }
+    #greeting{
+        font-size: 14px;
+    }
+ }
+@media only screen and (max-width: 800px)
+ {
+.button{
+    font-size: 5px;
+}
+    
+ }
+@media only screen and (max-width: 658px)
+ {
+
+    
  }
