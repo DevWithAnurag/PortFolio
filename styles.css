@@ -15,7 +15,7 @@ body {
   width: 100%;
   height: 100%;
   background-color: #1F1F1F;
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
   /* position: relative; */
 }
 
@@ -41,7 +41,7 @@ body {
 .floatingEmail {
   position: fixed;
   z-index: 99;
-  left: 2%;
+  left: 30px;
 
 }
 
@@ -86,7 +86,7 @@ body {
 
 .top {
   position: absolute;
-  /* left: 317px; */
+  top: 0;
   z-index: 99;
   display: flex;
   justify-content: center;
@@ -94,7 +94,7 @@ body {
   margin: auto;
   height: 0;
   background: url("Ellipse 4.png") no-repeat;
-  background-position: center;
+  background-position: top;
   background-size: 765px;
   transition: all 0.6s;
 }
@@ -183,8 +183,11 @@ body {
   transition: all 0.5s;
 }
 
+.profileImage>img{
+  width:15.2vw;
+}
+
 .aboutMe {
-  padding: 50px;
   width: 60%;
   display: flex;
   flex-direction: column;
@@ -198,14 +201,17 @@ body {
   text-align: center;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  justify-content: center;
+  align-items: center;
   font-size: 17px;
+  height: 145px;
 }
 
 .greetingContainer>h1 {
   font-family: 'Trocchi', serif;
-  font-size: 43px;
+  font-size: 3vw;
   font-weight: 400;
+    /* height: 94px;; */
 }
 
 
@@ -213,11 +219,12 @@ body {
   text-align: center;
   color: white;
   font-family: 'Varela', sans-serif;
-  width: 556px;
+  /* width: 556px; */
+  font-size: 1.3vw;
 }
 
 #greeting {
-  font-size: 20px;
+  font-size: 1.3vw;
 }
 
 .highlight {
@@ -233,11 +240,11 @@ body {
 
 
 .button {
-  font-family: 'Kanit', sans-serif;
+  /* font-family: 'Kanit', sans-serif; */
   min-width: 50px;
   min-height: 30px;
-  font-family: 'Nunito', sans-serif;
-  font-size: 14px;
+  /* font-family: 'Nunito', sans-serif; */
+  font-size: 1vw;
   text-transform: uppercase;
   letter-spacing: 1.3px;
   font-weight: 700;
@@ -346,7 +353,7 @@ button:focus::after {
   display: grid;
   margin: auto;
   grid-template-columns: repeat(auto-fit, minmax(375px, 12px));
-  place-items: center;
+ justify-content: center;
   width: 100%;
     height: auto;
   gap: 20px;

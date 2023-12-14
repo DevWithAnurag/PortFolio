@@ -1,31 +1,75 @@
-@media only screen and (max-width: 1097px)
- {
+@media only screen and (max-width: 1097px) {
 
     .ProFileImageAndGreetingcontainer {
         gap: 10px;
         justify-content: center;
         align-items: center;
     }
-    .greetingContainer>h1{
-     font-size: 15px;   
-    }
-    .greetingContainer>p{
-     font-size: 10px;   
-     width: 210px;
-    }
-    #greeting{
-        font-size: 14px;
-    }
- }
-@media only screen and (max-width: 800px)
- {
-.button{
-    font-size: 5px;
-}
-    
- }
-@media only screen and (max-width: 658px)
- {
 
     
- }
+}
+
+@media only screen and (max-width: 800px) {
+    .button {
+        font-size: 10%;
+    }
+
+   
+  
+}
+@media only screen and (max-width: 742px) {
+
+  
+}
+
+    @media only screen and (max-width: 658px) {
+
+        .profileImage> img{
+            width: 18vw !important;
+        }
+        .top {
+            background-size: 112%;
+        }
+
+        .heading>h1 {
+            font-size: 23px;
+        }
+        .greetingContainer{
+            height: auto;
+        }
+    }
+
+    @media only screen and (max-width: 544px) {
+
+        .ProFileImageAndGreetingcontainer {
+            margin: 0px 76px 4px 0px;
+        }
+        .box{
+            width: 325px;
+        }
+    }
+    @media only screen and (max-width: 470px) {
+        .heading>h1{
+            font-size: 12px;
+        }
+       .greetingContainer>p{
+        font-size: 1.7vw;
+       }
+       #greeting{
+        font-size: 1.7vw;
+       }
+       .line{
+        height: 79px !important;
+       }
+       .floatingEmail>img{
+        height: 40px !important;
+        left: -300%;
+       }
+    }
+
+    @media only screen and (max-width: 320px) {
+
+        .heading>h1{
+            font-size: 14px;
+        }
+    }
