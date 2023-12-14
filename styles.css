@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Trocchi&display=swap');
   @import url('https://fonts.googleapis.com/css2?family=Varela&display=swap');
   @import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Trykker&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -14,12 +16,12 @@ body {
 }
 
 .page1 {
-    width: 100%;
+    width: 100vw;
     height: 100%;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 .floatingEmail{
-    position: absolute;
+    position: fixed;
     z-index: 99;
     left: 5%;
     
@@ -40,7 +42,7 @@ cursor: pointer;
   left: 28px;
   width: 115px;
   opacity: 0;
-  scale: 0;
+  scale: 0.7;
   height: 37px;
   border-radius:30px;
   background-color: rgb(255, 255, 255);
@@ -56,7 +58,14 @@ cursor: pointer;
 height: 120px;
 background: #1068CF;
 }
+.cricle{
+  height: 90px;
+  width: 50%;
+}
 .top {
+  position: fixed;
+  left: 317px;
+  z-index: 99;
     display: flex;
     justify-content: center;
     width: 50%;
@@ -92,7 +101,8 @@ background: #1068CF;
     border-radius: 20px;
     background: #4D5155;
     backdrop-filter: blur(21px);
-    position: absolute;
+    /* position: absolute; */
+    position: fixed;
     right: 0.5%;
     top: 12%;
     padding: 20px 0px 20px 0px;
@@ -131,6 +141,7 @@ background: #1068CF;
 .ProFileImageAndGreetingcontainer {
     margin: 0px 100px 0px;
     display: flex;
+    height: 250px;
 }
 
 .profileImage {
@@ -356,3 +367,60 @@ gap: 70px;
     gap: 23px;
     width: 300px;
 }
+
+.page2{
+  width: 100%;
+  height: 100vh;
+}
+
+.porjectBoxContainer{
+  display: grid;
+  margin: auto;
+  grid-template-columns: repeat(auto-fit, minmax(375px, 12px));
+}
+.projectImage{
+  width: 95%;
+  height: 156px;
+  overflow: hidden;
+}
+
+
+.projectBox{
+  flex-direction: column; 
+  gap: 5px;
+  color: white;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.projectAboutSection{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+
+.AboutProject{
+  font-family: 'Trykker', serif;
+}
+
+.about>a{
+  color: rgb(0, 0, 0) !important;
+  text-decoration: none;
+}
+.OtherProjectsContainer{
+  display: flex;
+  width:256px;
+  gap: 10px;
+  transition: all 0.2s;
+}
+.OtherProjectsContainer:hover{
+  scale: 1.1;
+  }
+
+  .projectBoxInnerContainer{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
