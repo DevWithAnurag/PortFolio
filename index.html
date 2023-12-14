@@ -5,10 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="resStyles.css">
     <title>Anurag's PortFolio</title>
 </head>
 
-<body>
+<body onload="Animation()">
 
     <div class="page1">
 
@@ -23,7 +24,14 @@
         <div class="cricle">
             <div class="top">
                 <div class="heading">
-                    <h1>Welcome To Anurag ‘s portfolio</h1>
+                    <h1>
+                        <span class="animate_text">Welcome</span>
+                        <span class="animate_text">Welcome</span>
+                        <span class="animate_text">Anurag</span>
+                        <span class="animate_text">‘</span>
+                        <span class="animate_text">s</span>
+                        <span class="animate_text">portfolio</span>
+                        </h1>
                 </div>
             </div>
 
@@ -68,16 +76,55 @@
             <div class="aboutMe">
 
                 <div class="greetingContainer">
-                    <h1>Anurag is a <span class="highlight" id="element">Web developer</span></h1>
-                    <p><span class="highlight" id="greeting"></span> I'm Anurag Tiwari, a web developer with a passion
-                        for crafting exceptional digital
-                        experiences. Excited to connect and collaborate on creative projects. Let's embark on this
-                        journey together!</p>
+                    <h1 class="animate">
+                        <span class="animate_text">Anurag</span>
+                        <span class="animate_text">is</span>
+                        <span class="animate_text">a</span>
+                           <span class="highlight animate_text" id="element">Web developer</span>
+                    </h1>
+                    <p class="animate">
+                        <span class="highlight animate_text" id="greeting"></span> 
+                        <span class="animate_text">I</span>
+                        <span class="animate_text">‘</span>
+                        <span class="animate_text">m</span>
+                        <span class="animate_text">Anurag</span>
+                        <span class="animate_text">Tiwari</span>
+                        <span class="animate_text">,</span>
+                        <span class="animate_text">a</span>
+                        <span class="animate_text">web</span>
+                        <span class="animate_text">developer</span>
+                        <span class="animate_text">with</span>
+                        <span class="animate_text">a</span>
+                        <span class="animate_text">passion</span>
+                        <span class="animate_text">for</span>
+                        <span class="animate_text">crafting</span>
+                        <span class="animate_text">exceptional</span>
+                        <span class="animate_text">digital</span>
+                        <span class="animate_text">experiences</span>
+                        <span class="animate_text">.</span>
+                        <span class="animate_text">Excited</span>
+                        <span class="animate_text">to</span>
+                        <span class="animate_text">connect</span>
+                        <span class="animate_text">and</span>
+                        <span class="animate_text">collaborate</span>
+                        <span class="animate_text">on</span>
+                        <span class="animate_text">creative</span>
+                        <span class="animate_text">projects</span>
+                        <span class="animate_text">.</span>
+                        <span class="animate_text">Let</span>
+                        <span class="animate_text">,</span>
+                        <span class="animate_text">embark</span>
+                        <span class="animate_text">on</span>
+                        <span class="animate_text">this</span>
+                        <span class="animate_text">journey</span>
+                        <span class="animate_text">together</span>
+                        <span class="animate_text">!</span>
+                    </p>
                 </div>
 
                 <div class="btnContainer">
-                    <button class="button"> My Work</button>
-                    <button class="button hireMebtn"> Hire me </button>
+                    <button class="button"  id="btn1"> My Work</button>
+                    <button class="button hireMebtn" id="btn2"> Hire me </button>
                 </div>
 
             </div>
@@ -85,7 +132,7 @@
 
         <div class="SkillsContainer">
 
-            <div class="headingContainer">
+            <div class="headingContainer  page1HeadingContainer">
                 <div class="heading MySkills">
                     <h1>My Skills</h1>
                 </div>
@@ -104,7 +151,7 @@
 
             <div class="boxContainer">
 
-                <div class="box">
+                <div class="box page1Box">
                     <div class="boxTop">
                         <svg xmlns="http://www.w3.org/2000/svg" width="38" height="11" viewBox="0 0 38 11" fill="none">
                             <ellipse cx="5.36673" cy="5.25517" rx="4.95828" ry="5.05106" fill="#FF0000" />
@@ -176,7 +223,7 @@
                     </div>
                 </div>
 
-                <div class="box">
+                <div class="box page1Box">
                     <div class="boxTop">
                         <svg xmlns="http://www.w3.org/2000/svg" width="38" height="11" viewBox="0 0 38 11" fill="none">
                             <ellipse cx="5.36673" cy="5.25517" rx="4.95828" ry="5.05106" fill="#FF0000" />
@@ -222,7 +269,7 @@
                     </div>
                 </div>
 
-                <div class="box">
+                <div class="box page1Box">
                     <div class="boxTop">
                         <svg xmlns="http://www.w3.org/2000/svg" width="38" height="11" viewBox="0 0 38 11" fill="none">
                             <ellipse cx="5.36673" cy="5.25517" rx="4.95828" ry="5.05106" fill="#FF0000" />
@@ -280,6 +327,7 @@
                         </div>
                     </div>
                 </div>
+
             </div>
 
         </div>
@@ -289,193 +337,212 @@
 
     <div class="page2">
 
-        <div class="boxContainer porjectBoxContainer">
+        <div class="SkillsContainer ">
 
-            <div class="box" style="height: 361px;">
-                <div class="boxTop">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="38" height="11" viewBox="0 0 38 11" fill="none">
-                        <ellipse cx="5.36673" cy="5.25517" rx="4.95828" ry="5.05106" fill="#FF0000" />
-                        <ellipse cx="19.097" cy="5.25517" rx="4.95828" ry="5.05106" fill="#FAFF00" />
-                        <ellipse cx="32.8282" cy="5.25517" rx="4.95828" ry="5.05106" fill="#00FF38" />
+            <div class="headingContainer page2HeadingContainer">
+                <div class="heading MySkills">
+                    <h1>My Projects</h1>
+                </div>
+                <div class="LineContainer">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="37" height="121" viewBox="0 0 37 121" fill="none">
+                        <line y1="-3" x2="119.205" y2="-3"
+                            transform="matrix(-0.00332308 0.999995 0.999995 0.00332308 6.39642 0.999901)"
+                            stroke="#1068CF" stroke-width="6" />
+                        <line y1="-3" x2="30.3232" y2="-3"
+                            transform="matrix(-0.999989 -0.00476512 -0.00476512 0.999989 36.6989 7.1619)"
+                            stroke="#1068CF" stroke-width="6" />
                     </svg>
                 </div>
-                <div class="BoxInnerContainer projectBox">
-                    <div class="projectImage">
-                        <img src="image 7.png" alt="">
-                    </div>
-                    <div class="projectAboutSection">
-                        <div class="projectHeading">
-                            <h2 style="font-weight: 400;">To-Do list app in JavaScript</h2>
-                        </div>
-                        <div class="AboutProject">
-                            <p>
-                                My Todo List app, coded in HTML, CSS, and JavaScript, delivers a sleek, responsive
-                                interface for effortlessly managing tasks and boosting productivity..</p>
-                        </div>
-                    </div>
-                </div>
+
             </div>
 
-            <div class="box" style="height: 361px;">
-                <div class="boxTop">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="38" height="11" viewBox="0 0 38 11" fill="none">
-                        <ellipse cx="5.36673" cy="5.25517" rx="4.95828" ry="5.05106" fill="#FF0000" />
-                        <ellipse cx="19.097" cy="5.25517" rx="4.95828" ry="5.05106" fill="#FAFF00" />
-                        <ellipse cx="32.8282" cy="5.25517" rx="4.95828" ry="5.05106" fill="#00FF38" />
-                    </svg>
-                </div>
-                <div class="BoxInnerContainer projectBox">
-                    <div class="projectImage">
-                        <img src="image 1.png" alt="">
+            <div class="boxContainer">
+                <div class="box page2Box" style="height: 361px;">
+                    <div class="boxTop">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="38" height="11" viewBox="0 0 38 11" fill="none">
+                            <ellipse cx="5.36673" cy="5.25517" rx="4.95828" ry="5.05106" fill="#FF0000" />
+                            <ellipse cx="19.097" cy="5.25517" rx="4.95828" ry="5.05106" fill="#FAFF00" />
+                            <ellipse cx="32.8282" cy="5.25517" rx="4.95828" ry="5.05106" fill="#00FF38" />
+                        </svg>
                     </div>
-                    <div class="projectAboutSection">
-                        <div class="projectHeading">
-                            <h2 style="font-weight: 400;">Cool GSAP Scroll Animation </h2>
+                    <div class="BoxInnerContainer projectBox">
+                        <div class="projectImage">
+                            <img src="image 7.png" alt="">
                         </div>
-                        <div class="AboutProject">
-                            <p>A cool Fanta - GSAP (i.e. Java Script Libery),it has cool scroll Animations and Also
-                                has a buy now Box that follows your mouse cursor</p>
+                        <div class="projectAboutSection">
+                            <div class="projectHeading">
+                                <h2 style="font-weight: 400;">To-Do list app in JavaScript</h2>
+                            </div>
+                            <div class="AboutProject">
+                                <p>
+                                    My Todo List app, coded in HTML, CSS, and JavaScript, delivers a sleek, responsive
+                                    interface for effortlessly managing tasks and boosting productivity..</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="box" style="height: 361px;">
-                <div class="boxTop">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="38" height="11" viewBox="0 0 38 11" fill="none">
-                        <ellipse cx="5.36673" cy="5.25517" rx="4.95828" ry="5.05106" fill="#FF0000" />
-                        <ellipse cx="19.097" cy="5.25517" rx="4.95828" ry="5.05106" fill="#FAFF00" />
-                        <ellipse cx="32.8282" cy="5.25517" rx="4.95828" ry="5.05106" fill="#00FF38" />
-                    </svg>
-                </div>
-                <div class="BoxInnerContainer projectBox">
-                    <div class="projectImage">
-                        <img src="image 4.png" alt="">
+                <div class="box page2Box" style="height: 361px;">
+                    <div class="boxTop">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="38" height="11" viewBox="0 0 38 11" fill="none">
+                            <ellipse cx="5.36673" cy="5.25517" rx="4.95828" ry="5.05106" fill="#FF0000" />
+                            <ellipse cx="19.097" cy="5.25517" rx="4.95828" ry="5.05106" fill="#FAFF00" />
+                            <ellipse cx="32.8282" cy="5.25517" rx="4.95828" ry="5.05106" fill="#00FF38" />
+                        </svg>
                     </div>
-                    <div class="projectAboutSection">
-                        <div class="projectHeading">
-                            <h2 style="font-weight: 400;">Windows-11 Clone</h2>
+                    <div class="BoxInnerContainer projectBox">
+                        <div class="projectImage">
+                            <img src="image 1.png" alt="">
                         </div>
-                        <div class="AboutProject">
-                            <p>Windows-11 Clone using HTML,CSS and JavaScript, and that has moving File Explorer ,
-                                Working Task Bar , WiFi section.</p>
+                        <div class="projectAboutSection">
+                            <div class="projectHeading">
+                                <h2 style="font-weight: 400;">Cool GSAP Scroll Animation </h2>
+                            </div>
+                            <div class="AboutProject">
+                                <p>A cool Fanta - GSAP (i.e. Java Script Libery),it has cool scroll Animations and Also
+                                    has a buy now Box that follows your mouse cursor</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="box" style="height: 361px;">
-                <div class="boxTop">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="38" height="11" viewBox="0 0 38 11" fill="none">
-                        <ellipse cx="5.36673" cy="5.25517" rx="4.95828" ry="5.05106" fill="#FF0000" />
-                        <ellipse cx="19.097" cy="5.25517" rx="4.95828" ry="5.05106" fill="#FAFF00" />
-                        <ellipse cx="32.8282" cy="5.25517" rx="4.95828" ry="5.05106" fill="#00FF38" />
-                    </svg>
-                </div>
-                <div class="BoxInnerContainer projectBox">
-                    <div class="projectImage">
-                        <img src="image 5.png" alt="">
+                <div class="box page2Box" style="height: 361px;">
+                    <div class="boxTop">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="38" height="11" viewBox="0 0 38 11" fill="none">
+                            <ellipse cx="5.36673" cy="5.25517" rx="4.95828" ry="5.05106" fill="#FF0000" />
+                            <ellipse cx="19.097" cy="5.25517" rx="4.95828" ry="5.05106" fill="#FAFF00" />
+                            <ellipse cx="32.8282" cy="5.25517" rx="4.95828" ry="5.05106" fill="#00FF38" />
+                        </svg>
                     </div>
-                    <div class="projectAboutSection">
-                        <div class="projectHeading">
-                            <h2 style="font-weight: 400;">Random Password Generator</h2>
+                    <div class="BoxInnerContainer projectBox">
+                        <div class="projectImage">
+                            <img src="image 4.png" alt="">
                         </div>
-                        <div class="AboutProject">
-                            <p>A random Password Generator that generator random passwords as per the user
-                                requirement including upper-Case,lower-Case,Number and Special symbols.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="box" style="height: 361px;">
-                <div class="boxTop">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="38" height="11" viewBox="0 0 38 11" fill="none">
-                        <ellipse cx="5.36673" cy="5.25517" rx="4.95828" ry="5.05106" fill="#FF0000" />
-                        <ellipse cx="19.097" cy="5.25517" rx="4.95828" ry="5.05106" fill="#FAFF00" />
-                        <ellipse cx="32.8282" cy="5.25517" rx="4.95828" ry="5.05106" fill="#00FF38" />
-                    </svg>
-                </div>
-                <div class="BoxInnerContainer projectBox">
-                    <div class="projectImage">
-                        <img src="image 7.png" alt="">
-                    </div>
-                    <div class="projectAboutSection">
-                        <div class="projectHeading">
-                            <h2 style="font-weight: 400;">Puzzle Game in javaScript </h2>
-                        </div>
-                        <div class="AboutProject">
-                            <p>A Puzzle Game in javaScript that has features like move count,max moves,Winner and
-                                Game Over allotment. </p>
+                        <div class="projectAboutSection">
+                            <div class="projectHeading">
+                                <h2 style="font-weight: 400;">Windows-11 Clone</h2>
+                            </div>
+                            <div class="AboutProject">
+                                <p>Windows-11 Clone using HTML,CSS and JavaScript, and that has moving File Explorer ,
+                                    Working Task Bar , WiFi section.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="box OtherProjectBox" style="height: 361px;">
-                <div class="boxTop">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="38" height="11" viewBox="0 0 38 11" fill="none">
-                        <ellipse cx="5.36673" cy="5.25517" rx="4.95828" ry="5.05106" fill="#FF0000" />
-                        <ellipse cx="19.097" cy="5.25517" rx="4.95828" ry="5.05106" fill="#FAFF00" />
-                        <ellipse cx="32.8282" cy="5.25517" rx="4.95828" ry="5.05106" fill="#00FF38" />
-                    </svg>
-                    <div class="boxHeading">
-                        <h3>Other Porjects</h3>
+                <div class="box page2Box" style="height: 361px;">
+                    <div class="boxTop">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="38" height="11" viewBox="0 0 38 11" fill="none">
+                            <ellipse cx="5.36673" cy="5.25517" rx="4.95828" ry="5.05106" fill="#FF0000" />
+                            <ellipse cx="19.097" cy="5.25517" rx="4.95828" ry="5.05106" fill="#FAFF00" />
+                            <ellipse cx="32.8282" cy="5.25517" rx="4.95828" ry="5.05106" fill="#00FF38" />
+                        </svg>
+                    </div>
+                    <div class="BoxInnerContainer projectBox">
+                        <div class="projectImage">
+                            <img src="image 5.png" alt="">
+                        </div>
+                        <div class="projectAboutSection">
+                            <div class="projectHeading">
+                                <h2 style="font-weight: 400;">Random Password Generator</h2>
+                            </div>
+                            <div class="AboutProject">
+                                <p>A random Password Generator that generator random passwords as per the user
+                                    requirement including upper-Case,lower-Case,Number and Special symbols.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="projectBoxInnerContainer projectBox">
 
-                    <div class="OtherProjectsContainer">
-                        <div class="arrow">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="13" viewBox="0 0 10 13"
-                                fill="none">
-                                <path
-                                    d="M9.99858 5.46976L-0.00813082 0.711023L0.00813535 12.258L10.0014 7.46976L9.99858 5.46976Z"
-                                    fill="#1068CF" />
-                            </svg>
+                <div class="box page2Box" style="height: 361px;">
+                    <div class="boxTop">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="38" height="11" viewBox="0 0 38 11" fill="none">
+                            <ellipse cx="5.36673" cy="5.25517" rx="4.95828" ry="5.05106" fill="#FF0000" />
+                            <ellipse cx="19.097" cy="5.25517" rx="4.95828" ry="5.05106" fill="#FAFF00" />
+                            <ellipse cx="32.8282" cy="5.25517" rx="4.95828" ry="5.05106" fill="#00FF38" />
+                        </svg>
+                    </div>
+                    <div class="BoxInnerContainer projectBox">
+                        <div class="projectImage">
+                            <img src="image 7.png" alt="">
                         </div>
-                        <div class="about">
-                            <h3>Faulty Calculator</h3>
-                            <a href="https://anuragtiwar.github.io/faulty-calculator/">
-                                <p>https://anuragtiwar.github.io/<br>faulty-calculator/</p>
-                            </a>
+                        <div class="projectAboutSection">
+                            <div class="projectHeading">
+                                <h2 style="font-weight: 400;">Puzzle Game in javaScript </h2>
+                            </div>
+                            <div class="AboutProject">
+                                <p>A Puzzle Game in javaScript that has features like move count,max moves,Winner and
+                                    Game Over allotment. </p>
+                            </div>
                         </div>
                     </div>
-                    
-                    <div class="OtherProjectsContainer">
-                        <div class="arrow">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="13" viewBox="0 0 10 13"
-                                fill="none">
-                                <path
-                                    d="M9.99858 5.46976L-0.00813082 0.711023L0.00813535 12.258L10.0014 7.46976L9.99858 5.46976Z"
-                                    fill="#1068CF" />
-                            </svg>
-                        </div>
-                        <div class="about">
-                            <h3>Modern Form Layout</h3>
-                            <a href="https://anuragtiwar.github.io/Modern-Form/">
-                                <p>https://anuragtiwar.github.io/<br>Modern-Form/</p>
-                            </a>
+                </div>
+
+                <div class="box page2Box OtherProjectBox" style="height: 361px;">
+                    <div class="boxTop">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="38" height="11" viewBox="0 0 38 11" fill="none">
+                            <ellipse cx="5.36673" cy="5.25517" rx="4.95828" ry="5.05106" fill="#FF0000" />
+                            <ellipse cx="19.097" cy="5.25517" rx="4.95828" ry="5.05106" fill="#FAFF00" />
+                            <ellipse cx="32.8282" cy="5.25517" rx="4.95828" ry="5.05106" fill="#00FF38" />
+                        </svg>
+                        <div class="boxHeading">
+                            <h3>Other Porjects</h3>
                         </div>
                     </div>
+                    <div class="projectBoxInnerContainer projectBox">
 
-                    <div class="OtherProjectsContainer">
-                        <div class="arrow">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="13" viewBox="0 0 10 13"
-                                fill="none">
-                                <path
-                                    d="M9.99858 5.46976L-0.00813082 0.711023L0.00813535 12.258L10.0014 7.46976L9.99858 5.46976Z"
-                                    fill="#1068CF" />
-                            </svg>
+                        <div class="OtherProjectsContainer">
+                            <div class="arrow">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="13" viewBox="0 0 10 13"
+                                    fill="none">
+                                    <path
+                                        d="M9.99858 5.46976L-0.00813082 0.711023L0.00813535 12.258L10.0014 7.46976L9.99858 5.46976Z"
+                                        fill="#1068CF" />
+                                </svg>
+                            </div>
+                            <div class="about">
+                                <h3>Faulty Calculator</h3>
+                                <a href="https://anuragtiwar.github.io/faulty-calculator/">
+                                    <p>https://anuragtiwar.github.io/<br>faulty-calculator/</p>
+                                </a>
+                            </div>
                         </div>
-                        <div class="about">
-                            <h3>Mouse Move Animation</h3>
-                            <a href="https://anuragtiwar.github.io/faulty-calculator/">
-                                <p>https://anuragtiwar.github.io/<br>Mouse_Animation/</p>
-                            </a>
+
+                        <div class="OtherProjectsContainer">
+                            <div class="arrow">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="13" viewBox="0 0 10 13"
+                                    fill="none">
+                                    <path
+                                        d="M9.99858 5.46976L-0.00813082 0.711023L0.00813535 12.258L10.0014 7.46976L9.99858 5.46976Z"
+                                        fill="#1068CF" />
+                                </svg>
+                            </div>
+                            <div class="about">
+                                <h3>Modern Form Layout</h3>
+                                <a href="https://anuragtiwar.github.io/Modern-Form/">
+                                    <p>https://anuragtiwar.github.io/<br>Modern-Form/</p>
+                                </a>
+                            </div>
                         </div>
+
+                        <div class="OtherProjectsContainer">
+                            <div class="arrow">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="13" viewBox="0 0 10 13"
+                                    fill="none">
+                                    <path
+                                        d="M9.99858 5.46976L-0.00813082 0.711023L0.00813535 12.258L10.0014 7.46976L9.99858 5.46976Z"
+                                        fill="#1068CF" />
+                                </svg>
+                            </div>
+                            <div class="about">
+                                <h3>Mouse Move Animation</h3>
+                                <a href="https://anuragtiwar.github.io/faulty-calculator/">
+                                    <p>https://anuragtiwar.github.io/<br>Mouse_Animation/</p>
+                                </a>
+                            </div>
+                        </div>
+
                     </div>
-
                 </div>
             </div>
         </div>
@@ -483,17 +550,33 @@
 
 
 
-
+        <!-- for the typewrite Animations -->
         <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
         <script>
-            var typed = new Typed('#element', {
+            setTimeout(() => {
+                var typed = new Typed('#element', {
                 strings: ['Web Developer', 'Web Designer'],
                 typeSpeed: 50,
                 loop: true,
                 loopCount: Infinity,
             });
+            }, 2000);
+          
         </script>
+
+
+        <!-- GSAP CDN -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+            integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"
+            integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+        <!-- Custom javaSCript -->
         <script src="script.js"></script>
+        <script src="gsap.js"></script>
 </body>
 
 </html>
