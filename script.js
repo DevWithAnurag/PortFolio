@@ -13,6 +13,7 @@
 })();
 
 
+
 //fcuntion for hover effect
 (function hoverEffect() {
     let afterHoverBox = document.querySelector(".afterHoverBox");
@@ -69,3 +70,6 @@ function Animation() {
    AnimatprofileImagee()
    popUpAnimation();//error
 }
+
+
+

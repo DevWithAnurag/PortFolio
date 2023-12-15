@@ -8,7 +8,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* border: 2px solid white; */
 }
 
 body {
@@ -16,7 +15,6 @@ body {
   height: 100%;
   background-color: #1F1F1F;
   overflow-x: hidden;
-  /* position: relative; */
 }
 
 ::-webkit-scrollbar {
@@ -122,11 +120,11 @@ body {
 .navBar {
   width: 62px;
   height: 454px;
-  flex-shrink: 0;
   border-radius: 20px;
   background: #4D5155;
   backdrop-filter: blur(21px);
   position: fixed;
+  z-index: 99;
   right: 0.5%;
   top: 12%;
   padding: 20px 0px 20px 0px;
@@ -136,6 +134,14 @@ body {
   justify-content: space-between;
   overflow: hidden;
   transition: all 0.5s;
+}
+
+svg {
+  cursor: pointer;
+  transition: all 0.5s;
+}
+svg:hover{
+  filter: drop-shadow(0 0 0.75rem #1068CF);
 }
 
 .navBarContainer {
@@ -154,41 +160,46 @@ body {
 
 .image:hover {
   scale: 1.9;
+  filter: drop-shadow(0 0 0.75rem #1068CF);
 }
 
 .image>img {
   width: 28px;
-  /* filter: invert(1); */
   filter: sepia(100%);
   cursor: pointer;
   transition: all 0.3s;
 }
 
+#LeetCodeImage {
+  width: 30px;
+}
+
 .ProFileImageAndGreetingcontainer {
-  margin: 0px 100px 0px;
+  margin: 0px 20px 0px;
   display: flex;
-  height: 250px;
   flex-wrap: wrap;
+  width: 92vw;
   height: auto;
 }
 
 
 
 .profileImage {
-  display: grid;
-  place-items: center;
-  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
   scale: 0;
   opacity: 0;
   transition: all 0.5s;
 }
 
-.profileImage>img{
-  width:15.2vw;
+.profileImage>img {
+  width: 200px;
 }
 
 .aboutMe {
-  width: 60%;
+  width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -211,7 +222,6 @@ body {
   font-family: 'Trocchi', serif;
   font-size: 3vw;
   font-weight: 400;
-    /* height: 94px;; */
 }
 
 
@@ -219,7 +229,6 @@ body {
   text-align: center;
   color: white;
   font-family: 'Varela', sans-serif;
-  /* width: 556px; */
   font-size: 1.3vw;
 }
 
@@ -240,12 +249,10 @@ body {
 
 
 .button {
-  /* font-family: 'Kanit', sans-serif; */
+  font-family: 'Kanit', sans-serif;
   min-width: 50px;
   min-height: 30px;
-  /* font-family: 'Nunito', sans-serif; */
-  font-size: 1vw;
-  text-transform: uppercase;
+  font-size: 16px;
   letter-spacing: 1.3px;
   font-weight: 700;
   color: #ffffff;
@@ -264,8 +271,8 @@ body {
 button::before {
   content: '';
   border-radius: 10px;
-  min-width: calc(25px + 76px);
-  min-height: calc(28px + 10px);
+  width: 96px;
+  height: 48px;
   border: 3px solid rgb(16 104 207);
   box-shadow: 0 0 20px rgb(17 103 204);
   position: absolute;
@@ -277,12 +284,11 @@ button::before {
 }
 
 .hireMebtn::before {
-  min-width: calc(14px + 76px)
+  width: 88px;
 }
 
 .button:hover,
 .button:focus {
-  color: #000000;
   transform: translateY(-6px);
 }
 
@@ -319,7 +325,7 @@ button:focus::after {
   }
 
   100% {
-    width: 127px;
+    width: 100px;
     height: 50px;
     opacity: 0;
   }
@@ -347,15 +353,15 @@ button:focus::after {
 }
 
 .boxContainer {
-  padding-top: 70px;
+  padding-top: 44px;
   padding-left: 30px;
   padding-right: 50px;
   display: grid;
   margin: auto;
   grid-template-columns: repeat(auto-fit, minmax(375px, 12px));
- justify-content: center;
+  justify-content: center;
   width: 100%;
-    height: auto;
+  height: auto;
   gap: 20px;
 }
 
@@ -419,7 +425,7 @@ button:focus::after {
 
 .page2 {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   overflow: hidden;
 }
 
@@ -433,7 +439,9 @@ button:focus::after {
   width: 95%;
   height: 156px;
   overflow: hidden;
+  cursor: pointer;
 }
+
 
 
 .projectBox {
@@ -484,8 +492,8 @@ button:focus::after {
   transition: all cubic-bezier(0.19, 1, 0.22, 1)0.5s;
 }
 
-.page1Box{
-  transition:all 0.7s ;
+.page1Box {
+  transition: all 0.7s;
 }
 
 .page2Box {
@@ -651,7 +659,7 @@ button:focus::after {
 }
 
 .animate_text:nth-child(35) {
-  animation: fade-in 0.4s  3.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  animation: fade-in 0.4s 3.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
 
 .animate_text:nth-child(36) {

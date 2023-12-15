@@ -6,70 +6,93 @@
         align-items: center;
     }
 
-    
+
 }
 
-@media only screen and (max-width: 800px) {
+/* @media only screen and (max-width: 800px) {
     .button {
         font-size: 10%;
     }
 
-   
-  
-}
-@media only screen and (max-width: 742px) {
+} */
 
-  
-}
+@media only screen and (max-width: 471px) {
 
-    @media only screen and (max-width: 658px) {
-
-        .profileImage> img{
-            width: 18vw !important;
-        }
-        .top {
-            background-size: 112%;
-        }
-
-        .heading>h1 {
-            font-size: 23px;
-        }
-        .greetingContainer{
-            height: auto;
-        }
+    .greetingContainer>h1 {
+        font-size: 4vw;
     }
 
-    @media only screen and (max-width: 544px) {
-
-        .ProFileImageAndGreetingcontainer {
-            margin: 0px 76px 4px 0px;
-        }
-        .box{
-            width: 325px;
-        }
+    .greetingContainer>p {
+        font-size: 2vw;
     }
-    @media only screen and (max-width: 470px) {
-        .heading>h1{
-            font-size: 12px;
-        }
-       .greetingContainer>p{
+}
+
+@media only screen and (max-width: 658px) {
+    .top {
+        background-size: 112%;
+    }
+
+    .heading>h1 {
+        font-size: 23px;
+    }
+
+    .greetingContainer {
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 544px) {
+
+    .ProFileImageAndGreetingcontainer {
+        margin: auto;
+        height: 416px;
+    }
+
+    .box {
+        width: 325px;
+    }
+
+}
+
+@media only screen and (max-width: 470px) {
+    .heading>h1 {
+        font-size: 4vw;
+    }
+
+    .greetingContainer>h1 {
+        font-size: 4vw;
+    }
+
+    .greetingContainer>p {
+        font-size: 2vw;
+    }
+
+    #greeting {
         font-size: 1.7vw;
-       }
-       #greeting{
-        font-size: 1.7vw;
-       }
-       .line{
+    }
+
+    .line {
         height: 79px !important;
-       }
-       .floatingEmail>img{
+    }
+
+    .floatingEmail>img {
         height: 40px !important;
         left: -300%;
-       }
     }
 
-    @media only screen and (max-width: 320px) {
-
-        .heading>h1{
-            font-size: 14px;
-        }
+    .boxContainer {
+        padding-left: 56px;
     }
+
+    .aboutMe {
+        width: 70%;
+    }
+
+}
+
+@media only screen and (max-width: 320px) {
+
+    .heading>h1 {
+        font-size: 14px;
+    }
+}
