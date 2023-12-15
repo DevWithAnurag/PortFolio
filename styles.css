@@ -196,6 +196,14 @@ svg:hover{
 
 .profileImage>img {
   width: 200px;
+  transition: all 0.3s;
+  cursor: pointer;
+  filter: drop-shadow(5px 5px  20px #1068CF);
+  /* box-shadow: 1px 1px 1px 1px #1068CF; */
+}
+
+.profileImage>img:hover{
+  filter: drop-shadow(1px 1px 39px #1068CF);
 }
 
 .aboutMe {
