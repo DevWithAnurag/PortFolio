@@ -130,11 +130,13 @@ body {
   padding: 20px 0px 20px 0px;
   display: flex;
   flex-direction: column;
-  scale: 0;
+  transform: scale(0);
   justify-content: space-between;
   overflow: hidden;
   transition: all 0.5s;
 }
+
+
 
 svg {
   cursor: pointer;
@@ -189,7 +191,7 @@ svg:hover{
   justify-content: center;
   align-items: center;
   width: 50%;
-  scale: 0;
+  transform: scale(0);
   opacity: 0;
   transition: all 0.5s;
 }
@@ -199,7 +201,6 @@ svg:hover{
   transition: all 0.3s;
   cursor: pointer;
   filter: drop-shadow(5px 5px  20px #1068CF);
-  /* box-shadow: 1px 1px 1px 1px #1068CF; */
 }
 
 .profileImage>img:hover{
@@ -383,7 +384,7 @@ button:focus::after {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  scale: 0;
+  transform: scale(0);
 }
 
 .boxTop {

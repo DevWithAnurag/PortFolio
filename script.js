@@ -1,3 +1,4 @@
+
 //fucntion for Greeting
 (function getGreeting() {
     const currentHour = new Date().getHours();
@@ -20,11 +21,11 @@
     let FloatingImage = document.querySelector(".FloatingImage");
     FloatingImage.addEventListener('mouseenter', function () {
         afterHoverBox.style.opacity = 1;
-        afterHoverBox.style.scale = 1;
+        afterHoverBox.style.transform = "scale(1)";
     })
     FloatingImage.addEventListener('mouseleave', function () {
         afterHoverBox.style.opacity = 0;
-        afterHoverBox.style.scale = 0;
+        afterHoverBox.style.transform = "scale(1)";
     })
 })()
 
@@ -38,11 +39,15 @@ function lineAnimation(){
 }
 
 function popUpAnimation() {
-    let boxes=document.querySelectorAll(".box");
-    for (const key in boxes) {
-    boxes[key].style.scale="1";
+    let box = document.querySelectorAll(".box");
+            box[0].style.transform = "scale(1)";
+            box[1].style.transform = "scale(1)";
+            box[2].style.transform = "scale(1)";
+
+
 }
-};
+
+
 
 function topAnimation() {
     let top=document.querySelector('.top');
@@ -51,13 +56,13 @@ function topAnimation() {
 
 function AnimatprofileImagee() {
     let profileImage=document.querySelector('.profileImage');
-    profileImage.style.scale="1";
+    profileImage.style.transform = "scale(1)";
     profileImage.style.opacity="1";
 }
 
 function AnimatenavBar() {
     let navBar=document.querySelector('.navBar');
-    navBar.style.scale="1";
+    navBar.style.transform = "scale(1)";
 }
 
 
