@@ -78,7 +78,7 @@ function Animation() {
 
 //function for the sending mail to me.....
 function sendMailTome(){
-    window.location.href="mailto:you@example.com";
+    window.location.href="mailto:at956603@gmail.com";
 }
 
 //function for showing my work to the user......
