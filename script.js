@@ -76,5 +76,12 @@ function Animation() {
    popUpAnimation();//error
 }
 
+//function for the sending mail to me.....
+function sendMailTome(){
+    window.location.href="mailto:you@example.com";
+}
 
-
+//function for showing my work to the user......
+function redirectToPage(containerId) {
+    document.getElementById(containerId).scrollIntoView({ behavior: 'smooth' });
+  }

@@ -17,7 +17,7 @@
             <div class="line">
             </div>
             <img src="email.png" alt="email Ms" style="width: 40px; position:absolute; left: -18px; filter: invert(1);"
-                title="Email US" class="FloatingImage">
+                title="Email US" class="FloatingImage" onclick="sendMailTome();">
             <div class="afterHoverBox">Email Me</div>
         </div>
 
@@ -129,8 +129,8 @@
                 </div>
 
                 <div class="btnContainer">
-                    <button class="button" id="btn1"> My Work</button>
-                    <button class="button hireMebtn" id="btn2"> Hire me </button>
+                    <button class="button" id="btn1" onclick="redirectToPage('page2Container')"> My Work</button>
+                    <button class="button hireMebtn" id="btn2" onclick="sendMailTome();"> Hire me </button>
                 </div>
 
             </div>
@@ -341,7 +341,7 @@
 
     </div>
 
-    <div class="page2">
+    <div class="page2" id="page2Container">
 
         <div class="SkillsContainer ">
 
