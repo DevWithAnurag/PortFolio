@@ -51,7 +51,7 @@ function popUpAnimation() {
 
 function topAnimation() {
     let top=document.querySelector('.top');
-    top.style.height="13%";
+    top.style.backgroundSize = '765px';
 }
 
 function AnimatprofileImagee() {
